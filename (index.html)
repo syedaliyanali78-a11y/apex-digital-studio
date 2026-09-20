@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital Studio | Next-Gen Web Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPrimary: '#6366F1',
+                        brandAccent: '#06B6D4',
+                        brandDark: '#0B0F19',
+                        brandCard: '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-brandPrimary selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-brandDark/80 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-indigo-500/20">
+                    A
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">APEX <span class="text-brandAccent">STUDIO</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="text-brandAccent">Home</a>
+                <a href="services.html" class="hover:text-white transition">Services</a>
+                <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+            </nav>
+
+            <a href="contact.html" class="bg-gradient-to-r from-indigo-600 to-cyan-500 hover:opacity-90 text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-lg shadow-indigo-500/25 transition">
+                Start Project
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 px-6 max-w-7xl mx-auto text-center overflow-hidden">
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-indigo-600/20 to-cyan-400/20 rounded-full blur-3xl -z-10"></div>
+
+        <span class="inline-flex items-center gap-2 bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-4 py-1.5 rounded-full border border-indigo-500/20 mb-6">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Accepting New High-Growth Client Projects
+        </span>
+
+        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight mb-6 leading-tight">
+            We Design <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-cyan-300 to-white">High-Converting</span> Websites That Scale Businesses.
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+            Transforming brands with ultra-fast, mobile-optimized, and high-converting custom web solutions with integrated WhatsApp & Payment Gateways.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="contact.html" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-cyan-500 hover:opacity-90 text-white font-bold text-sm px-8 py-3.5 rounded-xl shadow-xl shadow-indigo-500/20 transition flex items-center justify-center gap-2">
+                <span>Book a Free Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#portfolio" class="w-full sm:w-auto bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 font-semibold text-sm px-8 py-3.5 rounded-xl transition">
+                Explore Portfolio
+            </a>
+        </div>
+
+        <!-- Metrics -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-10 border-t border-slate-800/80">
+            <div>
+                <h3 class="text-3xl font-black text-white">50+</h3>
+                <p class="text-xs text-slate-400 mt-1">Projects Delivered</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-black text-brandAccent">99.9%</h3>
+                <p class="text-xs text-slate-400 mt-1">Uptime & Performance</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-black text-indigo-400">3x</h3>
+                <p class="text-xs text-slate-400 mt-1">Average Conversion Increase</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-black text-white">24/7</h3>
+                <p class="text-xs text-slate-400 mt-1">Dedicated Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-xs font-bold text-brandAccent tracking-widest uppercase">Our Live Demos</span>
+            <h2 class="text-3xl font-black text-white mt-2">Selected Works & Case Studies</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-brandCard rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-500 group">
+                <div class="relative h-64 overflow-hidden bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Food Store" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-brandDark/90 text-cyan-400 text-xs font-bold px-3 py-1.5 rounded-full border border-cyan-500/30">
+                        Mahnoor Roll Burger Point
+                    </span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold text-white mb-2">1-Click WhatsApp Ordering Web App</h3>
+                    <p class="text-slate-400 text-sm mb-6">Designed for a local food enterprise to automate menu navigation and order dispatch directly to WhatsApp.</p>
+                    <a href="https://syedaliyanali78-a11y.github.io/mahnoor-roll-burger-demo/" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-brandAccent hover:text-cyan-300">
+                        <span>View Live Demo</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-brandCard rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-500 group">
+                <div class="relative h-64 overflow-hidden bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Luxury Fashion" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-brandDark/90 text-indigo-400 text-xs font-bold px-3 py-1.5 rounded-full border border-indigo-500/30">
+                        SYED COLLECTION'S
+                    </span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold text-white mb-2">E-Commerce Apparel & Luxury Store</h3>
+                    <p class="text-slate-400 text-sm mb-6">High-end fashion e-commerce setup with catalog synchronization, multi-currency display, and seamless checkout.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300">
+                        <span>Request Similar Demo</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-10 text-center text-slate-500 text-xs">
+        <p>© 2026 Apex Digital Studio. Designed for Global & Local Scale.</p>
+    </footer>
+
+</body>
+</html>
